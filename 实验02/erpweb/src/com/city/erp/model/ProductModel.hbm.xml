@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.city.erp.model">
+
+	<class name="ProductModel" table="erp_Product">
+		<id name="pno" column="PNO">
+			<generator class="native" />
+		</id>
+		<property name="pcode" column="PCODE" />
+		<property name="pname" column="PNAME" />
+		<property name="stockqty" column="STOCKQTY" />
+		<property name="pdate" column="PDATE" />
+		<property name="price" column="PRICE" />
+		<property name="pmodel" column="PModel" />
+		<property name="pdesc" column="PDESC" />
+	</class>
+
+</hibernate-mapping>

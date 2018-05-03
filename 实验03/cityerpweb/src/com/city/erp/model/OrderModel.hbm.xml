@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.city.erp.model">
+
+	<class name="OrderModel" table="erp_order">
+		<id name="orderno" column="orderno">
+			<generator class="native" />
+		</id>
+		<property name="orderid" column="orderID" />
+		<property name="customername" column="CustomerName" />
+		<property name="orderdate" column="OrderDate" />
+		<property name="deliverydate" column="DeliveryDate" />
+		<property name="paydate" column="PayDate" />
+		<property name="orderamount" column="OrderAmount" />
+		<property name="deliveryfee" column="DeliveryFee" />
+		
+	</class>
+
+</hibernate-mapping>
